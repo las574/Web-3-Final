@@ -1,0 +1,62 @@
+/* =============
+    Hero
+============= */
+#hero {
+  img {
+    font-size: 0;
+    display: block;
+  }
+  #hero-bottom {
+    @include md {
+      display: grid;
+      grid-template-columns: 40% auto;
+    }
+
+    @include lg {
+      grid-template-columns: 50% auto;
+    }
+
+    .hero-bottom-card {
+      display: grid;
+      grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". subhero .";
+      color: white;
+      padding: 16px 0;
+
+      > div {
+        grid-area: hero-sub;
+        display: flex;
+        align-items: center;
+
+        aside {
+          margin-left: auto;
+
+          a {
+            display: flex;
+          }
+        }
+      }
+    }
+
+    #hero-bottom-left {
+      background-color: #fd1569;
+      @include xxl {
+        grid-template-columns: 20% auto 16px;
+      }
+    }
+
+    #hero-bottom-right {
+      background-color: #3f0f20;
+      @include xxl {
+        grid-template-columns: 16px auto 20%;
+      }
+    }
+  }
+}
+#hero-bottom-left {
+  color: white;
+}
+
+#hero-bottom-right {
+  color: white;
+}

@@ -1,0 +1,51 @@
+/* =============
+    Sub-Hero
+============= */
+
+#sub-hero {
+  @include md {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". sub-hero-cards .";
+  }
+
+  @include xxl {
+    grid-template-columns: auto 1200px auto;
+  }
+  > div {
+    display: grid;
+    gap: 16px;
+
+    @include md {
+      grid-area: sub-hero-cards;
+      display: grid;
+      grid-template-columns: 50% auto;
+    }
+
+    > aside {
+      display: grid;
+      grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". sub-hero .";
+      background-color: #fe9fc1;
+
+      > div {
+        grid-area: sub-hero;
+        display: grid;
+        grid-template-columns: 70% auto;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    #sub-left {
+      color: white;
+      background-color: #000;
+    }
+
+    #sub-right {
+      color: white;
+    }
+  }
+}
