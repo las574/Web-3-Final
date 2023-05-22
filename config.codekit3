@@ -60,6 +60,82 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/gallery\/Gallery.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/gallery\/Gallery.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/gallery\/Group 54.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/gallery\/Group 54.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/gallery\/Group 55.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/gallery\/Group 55.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/gallery\/Group 56.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/gallery\/Group 56.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/Header\/Ellipse 6.jpg" : {
+      "ft" : 16384,
+      "iS" : 5834,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Header\/Ellipse 6.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Header\/Ellipse 6.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Header\/Ellipse 6.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/Header\/Frame 55.jpg" : {
+      "ft" : 16384,
+      "iS" : 8853,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Header\/Frame 55.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Header\/logoheader.png" : {
       "ft" : 32768,
       "iS" : 15125,
@@ -86,6 +162,26 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/Header\/menu.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Header\/menu.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/Header\/S M E G.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Header\/S M E G.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/Header\/smeglogoletter.png" : {
       "ft" : 32768,
       "iS" : 12273,
@@ -111,6 +207,16 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/deploy\/img\/one step\/Ellipse 7.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/one step\/Ellipse 7.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/img\/one step\/small g.png" : {
       "ft" : 32768,
@@ -150,6 +256,16 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/deploy\/img\/one step\/Vector 1.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/one step\/Vector 1.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/img\/share experience\/gallery.png" : {
       "ft" : 32768,
@@ -268,6 +384,46 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/Technical\/Ellipse 4.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Technical\/Ellipse 4.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/Technical\/Ellipse 5.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Technical\/Ellipse 5.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/Technical\/Group 58.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Technical\/Group 58.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/Technical\/Group 59.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Technical\/Group 59.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/Technical\/Line 6.png" : {
       "ft" : 32768,
       "iS" : 139,
@@ -280,6 +436,16 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/deploy\/img\/Technical\/Line 6.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Technical\/Line 6.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/img\/Technical\/NICAL.png" : {
       "ft" : 32768,
@@ -294,6 +460,16 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/Technical\/NICAL.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Technical\/NICAL.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/Technical\/Polished Stainless Steel Crumb Tray.png" : {
       "ft" : 32768,
       "iS" : 1874,
@@ -306,6 +482,39 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/deploy\/img\/Technical\/TECH.png" : {
+      "ft" : 32768,
+      "iS" : 803,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Technical\/TECH.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Technical\/TECH.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Technical\/TECH.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/Technical\/technicalgroup.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Technical\/technicalgroup.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/index.html" : {
       "cB" : 0,
@@ -334,28 +543,36 @@
       "oAP" : "\/dev\/content\/gallery.html",
       "oF" : 0
     },
-    "\/dev\/content\/hero.kit" : {
+    "\/dev\/content\/one step.html" : {
       "cB" : 0,
-      "ft" : 2048,
+      "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/hero.html",
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/one step.html",
       "oF" : 0
     },
-    "\/dev\/content\/new.kit" : {
+    "\/dev\/content\/one step.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/new.html",
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/one step.html",
       "oF" : 0
     },
-    "\/dev\/content\/subHero.kit" : {
+    "\/dev\/content\/share experience.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/share experience.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/technical.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/subHero.html",
+      "oAP" : "\/dev\/content\/technical.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -574,7 +791,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_hero.scss" : {
+    "\/dev\/scss\/sections\/_one step.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -583,13 +800,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_hero.css",
+      "oAP" : "\/dev\/scss\/sections\/_one step.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_new.scss" : {
+    "\/dev\/scss\/sections\/_share experience.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -598,13 +815,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_new.css",
+      "oAP" : "\/dev\/scss\/sections\/_share experience.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_subhero.scss" : {
+    "\/dev\/scss\/sections\/_technical.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -613,7 +830,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_subhero.css",
+      "oAP" : "\/dev\/scss\/sections\/_technical.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

@@ -5,9 +5,12 @@
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
-  background-color: #3f0f20;
+  background-color: #000000;
 
   > div {
     grid-area: footer;
   }
+}
+#footer-text {
+  color: white;
 }

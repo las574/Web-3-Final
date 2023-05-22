@@ -15,9 +15,7 @@ html {
   --white: #ffffff;
   --gray: #7799a5;
   --lightGray: #d5d5d5;
-  --lightpink: #fe9fc1;
-  --barbiepink: #fd1569;
-  --bordeaux: #3f0f20;
+  --Red: #ee0909;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -492,119 +490,22 @@ header #form-content > div form button {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
-  background-color: #3f0f20;
+  background-color: #000000;
 }
 #footer > div {
   grid-area: footer;
 }
 
+#footer-text {
+  color: white;
+}
+
 /* =============
     Hero
 ============= */
-#hero img {
+#technical img {
   font-size: 0;
   display: block;
-}
-@media (min-width: 768px) {
-  #hero #hero-bottom {
-    display: grid;
-    grid-template-columns: 40% auto;
-  }
-}
-@media (min-width: 1024px) {
-  #hero #hero-bottom {
-    grid-template-columns: 50% auto;
-  }
-}
-#hero #hero-bottom .hero-bottom-card {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". subhero .";
-  color: white;
-  padding: 16px 0;
-}
-#hero #hero-bottom .hero-bottom-card > div {
-  grid-area: hero-sub;
-  display: flex;
-  align-items: center;
-}
-#hero #hero-bottom .hero-bottom-card > div aside {
-  margin-left: auto;
-}
-#hero #hero-bottom .hero-bottom-card > div aside a {
-  display: flex;
-}
-#hero #hero-bottom #hero-bottom-left {
-  background-color: #fd1569;
-}
-@media (min-width: 1440px) {
-  #hero #hero-bottom #hero-bottom-left {
-    grid-template-columns: 20% auto 16px;
-  }
-}
-#hero #hero-bottom #hero-bottom-right {
-  background-color: #3f0f20;
-}
-@media (min-width: 1440px) {
-  #hero #hero-bottom #hero-bottom-right {
-    grid-template-columns: 16px auto 20%;
-  }
-}
-
-#hero-bottom-left {
-  color: white;
-}
-
-#hero-bottom-right {
-  color: white;
-}
-
-/* =============
-    Sub-Hero
-============= */
-@media (min-width: 768px) {
-  #sub-hero {
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". sub-hero-cards .";
-  }
-}
-@media (min-width: 1440px) {
-  #sub-hero {
-    grid-template-columns: auto 1200px auto;
-  }
-}
-#sub-hero > div {
-  display: grid;
-  gap: 16px;
-}
-@media (min-width: 768px) {
-  #sub-hero > div {
-    grid-area: sub-hero-cards;
-    display: grid;
-    grid-template-columns: 50% auto;
-  }
-}
-#sub-hero > div > aside {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". sub-hero .";
-  background-color: #fe9fc1;
-}
-#sub-hero > div > aside > div {
-  grid-area: sub-hero;
-  display: grid;
-  grid-template-columns: 70% auto;
-}
-#sub-hero > div > aside > div img {
-  width: 100%;
-}
-#sub-hero > div #sub-left {
-  color: white;
-  background-color: #000;
-}
-#sub-hero > div #sub-right {
-  color: white;
 }
 
 /* =============
@@ -631,7 +532,7 @@ header #form-content > div form button {
 }
 @media (min-width: 1440px) {
   #gallery ul {
-    grid-template-areas: "g1 g2" "g1 g3";
+    grid-template-areas: "t1 t2" "t1 t3";
   }
 }
 @media (min-width: 1440px) {
@@ -651,7 +552,7 @@ header #form-content > div form button {
 }
 
 /* =============
-    New
+    One step
 ============= */
 @media (min-width: 768px) {
   #new {
@@ -732,4 +633,52 @@ header #form-content > div form button {
   #new #card-container #n5 {
     grid-area: n5;
   }
+}
+
+/* =============
+    Sub-Hero
+============= */
+@media (min-width: 768px) {
+  #sub-hero {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". sub-hero-cards .";
+  }
+}
+@media (min-width: 1440px) {
+  #sub-hero {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#sub-hero > div {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #sub-hero > div {
+    grid-area: sub-hero-cards;
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+#sub-hero > div > aside {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". sub-hero .";
+  background-color: #fe9fc1;
+}
+#sub-hero > div > aside > div {
+  grid-area: sub-hero;
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+#sub-hero > div > aside > div img {
+  width: 100%;
+}
+#sub-hero > div #sub-left {
+  color: white;
+  background-color: #000;
+}
+#sub-hero > div #sub-right {
+  color: white;
 }

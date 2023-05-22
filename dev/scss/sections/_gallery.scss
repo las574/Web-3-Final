@@ -22,8 +22,8 @@
 
     @include xxl {
       grid-template-areas:
-        "g1 g2"
-        "g1 g3";
+        "t1 t2"
+        "t1 t3";
     }
     #g1 {
       @include xxl {
