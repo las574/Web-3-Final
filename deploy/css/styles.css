@@ -571,69 +571,6 @@ header #form-content > div form button {
     grid-area: new;
   }
 }
-#new #card-container {
-  display: grid;
-  gap: 16px;
-}
-@media (min-width: 768px) {
-  #new #card-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "nt nt nt nt" "n1 n1 n2 n2" "n3 n3 n4 n4" ".. n5 n5 ..";
-  }
-}
-@media (min-width: 1024px) {
-  #new #card-container {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "nt nt nt nt nt nt" "n1 n1 n2 n2 n3 n3" ".. n4 n4 n5 n5 ..";
-  }
-}
-@media (min-width: 768px) {
-  #new #card-container h1 {
-    grid-area: nt;
-  }
-}
-#new #card-container section img {
-  width: 100%;
-}
-#new #card-container section .card-data {
-  background-color: #fe9fc1;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". card-data .";
-}
-#new #card-container section .card-data > div {
-  grid-area: card-data;
-}
-@media (min-width: 768px) {
-  #new #card-container #nt {
-    grid-area: nt;
-  }
-}
-@media (min-width: 768px) {
-  #new #card-container #n1 {
-    grid-area: n1;
-  }
-}
-@media (min-width: 768px) {
-  #new #card-container #n2 {
-    grid-area: n2;
-  }
-}
-@media (min-width: 768px) {
-  #new #card-container #n3 {
-    grid-area: n3;
-  }
-}
-@media (min-width: 768px) {
-  #new #card-container #n4 {
-    grid-area: n4;
-  }
-}
-@media (min-width: 768px) {
-  #new #card-container #n5 {
-    grid-area: n5;
-  }
-}
 
 /* =============
     Sub-Hero

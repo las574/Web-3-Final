@@ -195,6 +195,16 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/one step\/Ellipse 6.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/one step\/Ellipse 6.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/one step\/Ellipse 7.png" : {
       "ft" : 32768,
       "iS" : 119733,
@@ -230,6 +240,16 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/deploy\/img\/one step\/Text.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/one step\/Text.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/img\/one step\/text1.png" : {
       "ft" : 32768,
