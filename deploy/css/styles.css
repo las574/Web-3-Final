@@ -701,11 +701,17 @@ header #form-content > div form button {
 /* =============
     Gallery 
 ============= */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #gallery {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". gallery .";
+  }
+}
+@media (min-width: 1440px) {
+  #gallery {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
   }
 }
 @media (min-width: 768px) {
@@ -715,29 +721,52 @@ header #form-content > div form button {
     grid-template-columns: 50% auto;
   }
 }
+@media (min-width: 768px) {
+  #gallery ul > div {
+    grid-area: new;
+  }
+}
+#gallery ul #card-container {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #gallery ul #card-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "t1 t2" ".. t3 ..";
+  }
+}
 @media (min-width: 1024px) {
-  #gallery ul {
-    grid-template-columns: 60% auto;
+  #gallery ul #card-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "t1 t2 t3";
   }
 }
-@media (min-width: 1440px) {
-  #gallery ul {
-    grid-template-areas: "t1 t2" "t1 t3";
+#gallery ul #card-container section img {
+  width: 100%;
+}
+#gallery ul #card-container section .card-data {
+  background-color: #fe9fc1;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". card-data .";
+}
+#gallery ul #card-container section .card-data > div {
+  grid-area: card-data;
+}
+@media (min-width: 768px) {
+  #gallery ul #card-container #t1 {
+    grid-area: t1;
   }
 }
-@media (min-width: 1440px) {
-  #gallery ul #g1 {
-    grid-area: g1;
+@media (min-width: 768px) {
+  #gallery ul #card-container #t2 {
+    grid-area: t2;
   }
 }
-@media (min-width: 1440px) {
-  #gallery ul #g2 {
-    grid-area: g2;
-  }
-}
-@media (min-width: 1440px) {
-  #gallery ul #g3 {
-    grid-area: g3;
+@media (min-width: 768px) {
+  #gallery ul #card-container #t3 {
+    grid-area: t3;
   }
 }
 

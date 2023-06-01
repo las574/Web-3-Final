@@ -3,10 +3,14 @@
 ============= */
 
 #gallery {
-  @include lg {
+  @include md {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". gallery .";
+  }
+  @include xxl {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
   }
 
   ul {
@@ -16,29 +20,58 @@
       grid-template-columns: 50% auto;
     }
 
-    @include lg {
-      grid-template-columns: 60%auto;
-    }
-
-    @include xxl {
-      grid-template-areas:
-        "t1 t2"
-        "t1 t3";
-    }
-    #g1 {
-      @include xxl {
-        grid-area: g1;
+    > div {
+      @include md {
+        grid-area: new;
       }
     }
 
-    #g2 {
-      @include xxl {
-        grid-area: g2;
+    #card-container {
+      display: grid;
+      gap: 16px;
+
+      @include md {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+          "t1 t2"
+          ".. t3 ..";
       }
-    }
-    #g3 {
-      @include xxl {
-        grid-area: g3;
+
+      @include lg {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "t1 t2 t3";
+      }
+
+      section {
+        img {
+          width: 100%;
+        }
+        .card-data {
+          background-color: #fe9fc1;
+          display: grid;
+          grid-template-columns: 16px auto 16px;
+          grid-template-areas: ". card-data .";
+
+          > div {
+            grid-area: card-data;
+          }
+        }
+      }
+      #t1 {
+        @include md {
+          grid-area: t1;
+        }
+      }
+
+      #t2 {
+        @include md {
+          grid-area: t2;
+        }
+      }
+      #t3 {
+        @include md {
+          grid-area: t3;
+        }
       }
     }
   }
