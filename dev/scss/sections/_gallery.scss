@@ -34,7 +34,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
           "t1 t2"
-          ".. t3 ..";
+          ". t3 .";
       }
 
       @include lg {
