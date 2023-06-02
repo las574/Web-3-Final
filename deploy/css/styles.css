@@ -722,30 +722,40 @@ header #form-content > div form button {
 /* =============
     One step
 ============= */
-@media (min-width: 768px) {
-  #new {
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". new .";
-  }
+#onestep {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: " toaster-text " " halfcircle " " toaster " " mini-toasters " " toaster-bubble ";
+  grid-gap: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  justify-items: start;
 }
-@media (min-width: 1440px) {
-  #new {
-    grid-template-columns: auto 1200px auto;
-  }
+#onestep #toaster-text {
+  grid-area: toaster-text;
+}
+#onestep #halfcircle {
+  grid-area: halfcircle;
+}
+#onestep #toaster {
+  grid-area: toaster;
+}
+#onestep #mini-toasters {
+  grid-area: mini-toasters;
+}
+#onestep #toaster-bubble {
+  grid-area: toaster-bubble;
 }
 @media (min-width: 768px) {
-  #new > div {
-    grid-area: new;
+  #onestep {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: " toaster-text . " " halfcircle  . " " toaster toaster-bubble" " mini-toasters . ";
   }
 }
 
-.halfcircle {
-  height: 99px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 342px;
+.toaster-bubble {
+  height: 100%;
+  width: 100%;
 }
 
 /* =============

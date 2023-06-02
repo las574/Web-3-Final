@@ -2,27 +2,47 @@
     One step
 ============= */
 
-#new {
+#onestep {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    " toaster-text "
+    " halfcircle "
+    " toaster "
+    " mini-toasters "
+    " toaster-bubble ";
+  grid-gap: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  justify-items: start;
+
+  #toaster-text {
+    grid-area: toaster-text;
+  }
+  #halfcircle {
+    grid-area: halfcircle;
+  }
+  #toaster {
+    grid-area: toaster;
+  }
+  #mini-toasters {
+    grid-area: mini-toasters;
+  }
+  #toaster-bubble {
+    grid-area: toaster-bubble;
+  }
+
   @include md {
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". new .";
-  }
-
-  @include xxl {
-    grid-template-columns: auto 1200px auto;
-  }
-
-  > div {
-    @include md {
-      grid-area: new;
-    }
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      " toaster-text . "
+      " halfcircle  . "
+      " toaster toaster-bubble"
+      " mini-toasters . ";
   }
 }
-.halfcircle {
-  height: 99px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 342px;
+
+.toaster-bubble {
+  height: 100%;
+  width: 100%;
 }
