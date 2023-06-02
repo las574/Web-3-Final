@@ -3,76 +3,99 @@
 ============= */
 
 #gallery {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+
   @include md {
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". gallery .";
+    grid-template-columns: auto auto;
   }
-  @include xxl {
-    display: grid;
-    grid-template-columns: auto 1200px auto;
-  }
-
-  ul {
-    @include md {
-      grid-area: gallery;
-      display: grid;
-      grid-template-columns: 50% auto;
-    }
-
-    > div {
-      @include md {
-        grid-area: new;
-      }
-    }
-
-    #card-container {
-      display: grid;
-      gap: 16px;
-
-      @include md {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-          "t1 t2"
-          ". t3 .";
-      }
-
-      @include lg {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "t1 t2 t3";
-      }
-
-      section {
-        img {
-          width: 100%;
-        }
-        .card-data {
-          background-color: #fe9fc1;
-          display: grid;
-          grid-template-columns: 16px auto 16px;
-          grid-template-areas: ". card-data .";
-
-          > div {
-            grid-area: card-data;
-          }
-        }
-      }
-      #t1 {
-        @include md {
-          grid-area: t1;
-        }
-      }
-
-      #t2 {
-        @include md {
-          grid-area: t2;
-        }
-      }
-      #t3 {
-        @include md {
-          grid-area: t3;
-        }
-      }
-    }
+  @include lg {
+    grid-template-columns: auto auto auto;
   }
 }
+
+//   @include md {
+//     display: grid;
+//     grid-template-columns: 16px auto 16px;
+//     grid-template-areas: ". gallery .";
+//   }
+//   @include xxl {
+//     display: grid;
+//     grid-template-columns: auto 1200px auto;
+//   }
+
+//   ul {
+//     @include md {
+//       grid-area: gallery;
+//       display: grid;
+//       grid-template-columns: 50% auto;
+//     }
+
+//     > div {
+//       @include md {
+//         grid-area: new;
+//       }
+//     }
+//   }
+// }
+
+// #card-container {
+//   display: grid;
+//   gap: 16px;
+//   outline: 2px solid red;
+//   grid-template-columns: repeat(auto-fit, 1fr);
+
+//   @include md {
+//     #card-container {
+//       // grid-template-columns: repeat(3, 1fr);
+//       // grid-template-areas:
+//       //   "t1 . t2"
+//       //   ". t3 .";
+//       grid-template-columns: 1fr;
+//     }
+//   }
+
+//   @include lg {
+//     #card-container {
+//       // grid-template-columns: repeat(3, 1fr);
+//       // grid-template-areas: "t1 t2 t3";
+//       grid-template-columns: 1fr 1fr;
+//     }
+//   }
+// }
+//   section {
+//     img {
+//       width: 100%;
+//     }
+//     .card-data {
+//       background-color: #fe9fc1;
+//       display: grid;
+//       grid-template-columns: 16px auto 16px;
+//       grid-template-areas: ". card-data .";
+
+//       > div {
+//         grid-area: card-data;
+//       }
+//     }
+//   }
+// }
+
+// #t1 {
+//   @include md {
+//     grid-area: t1;
+//   }
+// }
+
+// #t2 {
+//   @include md {
+//     grid-area: t2;
+//   }
+// }
+// #t3 {
+//   @include md {
+//     grid-area: t3;
+//   }
+// }
