@@ -693,9 +693,97 @@ header #form-content > div form button {
 /* =============
     Hero
 ============= */
-#technical img {
-  font-size: 0;
-  display: block;
+#technicalheader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: " technicalheader ";
+  grid-gap: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  justify-items: start;
+}
+
+#technical {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: " one rond1 " " rond2 two ";
+  grid-gap: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  justify-items: start;
+}
+@media (min-width: 768px) {
+  #technical {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: " one rond1 " " rond2 two ";
+  }
+}
+
+#technicalheader {
+  grid-area: technicalheader;
+}
+
+#one {
+  grid-area: one;
+  height: 250;
+  width: 250;
+  height: 100%;
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+#rond1 {
+  grid-area: rond1;
+  height: 650;
+  width: 650;
+  height: 100%;
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+#two {
+  grid-area: two;
+  height: 250;
+  width: 250;
+  height: 100%;
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+#rond2 {
+  grid-area: rond2;
+  height: 650;
+  width: 650;
+  height: 100%;
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.technicalheader {
+  height: 100%;
+  width: 100%;
+}
+
+.Technical-Text1 {
+  padding-left: 200px;
+  padding-right: 14px;
+  justify-items: start;
+}
+
+.Technical-Text-middle {
+  padding-left: 170px;
+  padding-right: 14px;
+  justify-items: start;
+}
+
+.Technical-Text2 {
+  padding-left: 14px;
+  padding-right: 200px;
+  justify-items: start;
 }
 
 /* =============
@@ -725,35 +813,40 @@ header #form-content > div form button {
 #onestep {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: " toaster-text " " halfcircle " " toaster " " mini-toasters " " toaster-bubble ";
+  grid-template-areas: " toaster-text " " halfcircle " " toaster " " mini-toasters " " toaster-compare ";
   grid-gap: 14px;
   padding-left: 14px;
   padding-right: 14px;
   justify-items: start;
 }
-#onestep #toaster-text {
-  grid-area: toaster-text;
-}
-#onestep #halfcircle {
-  grid-area: halfcircle;
-}
-#onestep #toaster {
-  grid-area: toaster;
-}
-#onestep #mini-toasters {
-  grid-area: mini-toasters;
-}
-#onestep #toaster-bubble {
-  grid-area: toaster-bubble;
-}
 @media (min-width: 768px) {
   #onestep {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: " toaster-text . " " halfcircle  . " " toaster toaster-bubble" " mini-toasters . ";
+    grid-template-columns: 70%;
+    grid-template-areas: " toaster-text . " " halfcircle  . " " toaster toaster-compare" " mini-toasters . ";
   }
 }
 
-.toaster-bubble {
+#toaster-text {
+  grid-area: toaster-text;
+}
+
+#halfcircle {
+  grid-area: halfcircle;
+}
+
+#toaster {
+  grid-area: toaster;
+}
+
+#mini-toasters {
+  grid-area: mini-toasters;
+}
+
+#toaster-compare {
+  grid-area: toaster-compare;
+}
+
+.toaster-compare {
   height: 100%;
   width: 100%;
 }

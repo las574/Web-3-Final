@@ -10,39 +10,39 @@
     " halfcircle "
     " toaster "
     " mini-toasters "
-    " toaster-bubble ";
+    " toaster-compare ";
   grid-gap: 14px;
   padding-left: 14px;
   padding-right: 14px;
   justify-items: start;
 
-  #toaster-text {
-    grid-area: toaster-text;
-  }
-  #halfcircle {
-    grid-area: halfcircle;
-  }
-  #toaster {
-    grid-area: toaster;
-  }
-  #mini-toasters {
-    grid-area: mini-toasters;
-  }
-  #toaster-bubble {
-    grid-area: toaster-bubble;
-  }
-
   @include md {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 70%;
     grid-template-areas:
       " toaster-text . "
       " halfcircle  . "
-      " toaster toaster-bubble"
+      " toaster toaster-compare"
       " mini-toasters . ";
   }
 }
 
-.toaster-bubble {
+#toaster-text {
+  grid-area: toaster-text;
+}
+#halfcircle {
+  grid-area: halfcircle;
+}
+#toaster {
+  grid-area: toaster;
+}
+#mini-toasters {
+  grid-area: mini-toasters;
+}
+#toaster-compare {
+  grid-area: toaster-compare;
+}
+
+.toaster-compare {
   height: 100%;
   width: 100%;
 }

@@ -1,9 +1,98 @@
 /* =============
     Hero
 ============= */
+
+#technicalheader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: " technicalheader ";
+  grid-gap: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  justify-items: start;
+}
+@include md {
+  grid-template-columns: 1fr;
+  grid-template-areas: " technicalheader ";
+}
+
 #technical {
-  img {
-    font-size: 0;
-    display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    " one rond1 "
+    " rond2 two ";
+  grid-gap: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  justify-items: start;
+
+  @include md {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      " one rond1 "
+      " rond2 two ";
   }
+}
+
+#technicalheader {
+  grid-area: technicalheader;
+}
+#one {
+  grid-area: one;
+  height: 250;
+  width: 250;
+  height: 100%;
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+#rond1 {
+  grid-area: rond1;
+  height: 650;
+  width: 650;
+  height: 100%;
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+#two {
+  grid-area: two;
+  height: 250;
+  width: 250;
+  height: 100%;
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+#rond2 {
+  grid-area: rond2;
+  height: 650;
+  width: 650;
+  height: 100%;
+  width: 100%;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.technicalheader {
+  height: 100%;
+  width: 100%;
+}
+
+.Technical-Text1 {
+  padding-left: 200px;
+  padding-right: 14px;
+  justify-items: start;
+}
+
+.Technical-Text-middle {
+  padding-left: 170px;
+  padding-right: 14px;
+  justify-items: start;
+}
+.Technical-Text2 {
+  padding-left: 30px;
+  padding-right: 200px;
+  justify-items: start;
 }
