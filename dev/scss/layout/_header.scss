@@ -22,9 +22,13 @@ header {
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
     padding: 16px 0;
+    padding-left: 14px;
+    padding-right: 14px;
 
     @include md {
       padding: 24px 0;
+      padding-left: 14px;
+      padding-right: 14px;
     }
     @include xxl {
       grid-template-columns: auto 1200px auto;

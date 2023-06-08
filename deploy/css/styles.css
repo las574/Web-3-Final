@@ -641,10 +641,14 @@ header #form-content {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
   padding: 16px 0;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   header #form-content {
     padding: 24px 0;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 }
 @media (min-width: 1440px) {
@@ -698,7 +702,7 @@ header #form-content > div form button {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: " technicalheader ";
   grid-gap: 14px;
-  padding-left: 14px;
+  padding-left: 50px;
   padding-right: 14px;
   justify-items: start;
 }
@@ -706,7 +710,7 @@ header #form-content > div form button {
 #technical {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: " one rond1 " " rond2 two ";
+  grid-template-areas: ".technicalheader" " one rond1 " " rond2 two ";
   grid-gap: 14px;
   padding-left: 14px;
   padding-right: 14px;
@@ -715,7 +719,7 @@ header #form-content > div form button {
 @media (min-width: 768px) {
   #technical {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: " one rond1 " " rond2 two ";
+    grid-template-areas: ".technicalheader" " one rond1 " " rond2 two ";
   }
 }
 
@@ -781,7 +785,7 @@ header #form-content > div form button {
 }
 
 .Technical-Text2 {
-  padding-left: 14px;
+  padding-left: 30px;
   padding-right: 200px;
   justify-items: start;
 }

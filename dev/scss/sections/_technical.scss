@@ -7,19 +7,16 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas: " technicalheader ";
   grid-gap: 14px;
-  padding-left: 14px;
+  padding-left: 50px;
   padding-right: 14px;
   justify-items: start;
-}
-@include md {
-  grid-template-columns: 1fr;
-  grid-template-areas: " technicalheader ";
 }
 
 #technical {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
+    ".technicalheader"
     " one rond1 "
     " rond2 two ";
   grid-gap: 14px;
@@ -30,6 +27,7 @@
   @include md {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
+      ".technicalheader"
       " one rond1 "
       " rond2 two ";
   }
