@@ -697,20 +697,10 @@ header #form-content > div form button {
 /* =============
     Hero
 ============= */
-#technicalheader {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: " technicalheader ";
-  grid-gap: 14px;
-  padding-left: 50px;
-  padding-right: 14px;
-  justify-items: start;
-}
-
 #technical {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: ".technicalheader" " one rond1 " " rond2 two ";
+  grid-template-areas: "technicalheader technicalheader" " one rond1 " " rond2 two ";
   grid-gap: 14px;
   padding-left: 14px;
   padding-right: 14px;
@@ -719,12 +709,32 @@ header #form-content > div form button {
 @media (min-width: 768px) {
   #technical {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: ".technicalheader" " one rond1 " " rond2 two ";
+    grid-template-areas: "technicalheader technicalheader" " one rond1 " " rond2 two ";
   }
 }
 
 #technicalheader {
   grid-area: technicalheader;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+#technicalheader #line {
+  width: 100%;
+  height: 7px;
+  background-color: black;
+  display: block;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  #technicalheader #line {
+    width: 100%;
+    height: 7px;
+    background-color: black;
+    display: block;
+    margin-top: 27px;
+  }
 }
 
 #one {
@@ -811,35 +821,92 @@ header #form-content > div form button {
   }
 }
 
+@media (min-width: 768px) {
+  #t1text form {
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width: 1024px) {
+  #t1text form {
+    grid-template-columns: auto auto auto;
+    display: flex;
+  }
+  #t1text form input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    border-radius: 0%;
+    margin-right: 8px;
+  }
+}
+
 /* =============
     One step
 ============= */
+#blackrectangle {
+  margin-top: 20px;
+  height: 50px;
+  width: 100%;
+  display: block;
+  background-color: black;
+}
+@media (min-width: 768px) {
+  #blackrectangle {
+    margin-top: 40px;
+    height: 90px;
+    width: 150%;
+    display: block;
+    background-color: black;
+  }
+}
+
+#blackline {
+  margin-top: 14px;
+  width: 100%;
+  height: 6px;
+  background-color: black;
+  display: block;
+}
+@media (min-width: 768px) {
+  #blackline {
+    height: 6px;
+    width: 150%;
+    display: block;
+    background-color: black;
+  }
+}
+
 #onestep {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: " toaster-text " " halfcircle " " toaster " " mini-toasters " " toaster-compare ";
+  grid-template-areas: " toaster-text " " halfcircle " " toaster toaster-compare " " mini1 mini2 mini3 " "  ";
   grid-gap: 14px;
   padding-left: 14px;
   padding-right: 14px;
   justify-items: start;
+  align-items: center;
 }
 @media (min-width: 768px) {
   #onestep {
-    grid-template-columns: 70%;
-    grid-template-areas: " toaster-text . " " halfcircle  . " " toaster toaster-compare" " mini-toasters . ";
+    grid-template-columns: 70;
+    grid-template-areas: " toaster-text . " " halfcircle  . " " toaster toaster-compare" " mini1 mini2 mini3";
   }
 }
 
 #toaster-text {
   grid-area: toaster-text;
+  margin-top: 40px;
+  text-align: center;
 }
 
 #halfcircle {
   grid-area: halfcircle;
+  align-items: center;
 }
 
 #toaster {
   grid-area: toaster;
+  grid-template-columns: center;
 }
 
 #mini-toasters {
@@ -853,6 +920,10 @@ header #form-content > div form button {
 .toaster-compare {
   height: 100%;
   width: 100%;
+  grid-gap: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  justify-items: start;
 }
 
 /* =============

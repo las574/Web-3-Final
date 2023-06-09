@@ -2,21 +2,21 @@
     Hero
 ============= */
 
-#technicalheader {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: " technicalheader ";
-  grid-gap: 14px;
-  padding-left: 50px;
-  padding-right: 14px;
-  justify-items: start;
-}
+// .technicalheader {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-template-areas: " technicalheader ";
+//   grid-gap: 14px;
+//   padding-left: 50px;
+//   padding-right: 14px;
+//   justify-items: start;
+// }
 
 #technical {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    ".technicalheader"
+    "technicalheader technicalheader"
     " one rond1 "
     " rond2 two ";
   grid-gap: 14px;
@@ -27,7 +27,7 @@
   @include md {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      ".technicalheader"
+      "technicalheader technicalheader"
       " one rond1 "
       " rond2 two ";
   }
@@ -35,7 +35,41 @@
 
 #technicalheader {
   grid-area: technicalheader;
+  width: 100%;
+  // border: 1px solid red;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+
+  #line {
+    width: 100%;
+    height: 7px;
+    background-color: black;
+    display: block;
+    margin-top: 30px;
+
+    @include md {
+      width: 100%;
+      height: 7px;
+      background-color: black;
+      display: block;
+      margin-top: 27px;
+    }
+  }
 }
+
+// #line {
+//   grid-area: line;
+//   width: 100%;
+//   // overflow: hidden;
+//   div {
+//     width: 150%;
+//     height: 3px;
+//     background-color: black;
+//     margin-left: -50%;
+//   }
+// }
+
 #one {
   grid-area: one;
   height: 250;

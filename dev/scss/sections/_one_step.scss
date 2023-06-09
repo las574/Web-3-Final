@@ -1,6 +1,36 @@
 /* =============
     One step
 ============= */
+#blackrectangle {
+  margin-top: 20px;
+  height: 50px;
+  width: 100%;
+  display: block;
+  background-color: black;
+
+  @include md {
+    margin-top: 40px;
+    height: 90px;
+    width: 150%;
+    display: block;
+    background-color: black;
+  }
+}
+
+#blackline {
+  margin-top: 14px;
+  width: 100%;
+  height: 6px;
+  background-color: black;
+  display: block;
+
+  @include md {
+    height: 6px;
+    width: 150%;
+    display: block;
+    background-color: black;
+  }
+}
 
 #onestep {
   display: grid;
@@ -8,32 +38,37 @@
   grid-template-areas:
     " toaster-text "
     " halfcircle "
-    " toaster "
-    " mini-toasters "
-    " toaster-compare ";
+    " toaster toaster-compare "
+    " mini1 mini2 mini3 "
+    "  ";
   grid-gap: 14px;
   padding-left: 14px;
   padding-right: 14px;
   justify-items: start;
+  align-items: center;
 
   @include md {
-    grid-template-columns: 70%;
+    grid-template-columns: 70;
     grid-template-areas:
       " toaster-text . "
       " halfcircle  . "
       " toaster toaster-compare"
-      " mini-toasters . ";
+      " mini1 mini2 mini3";
   }
 }
 
 #toaster-text {
   grid-area: toaster-text;
+  margin-top: 40px;
+  text-align: center;
 }
 #halfcircle {
   grid-area: halfcircle;
+  align-items: center;
 }
 #toaster {
   grid-area: toaster;
+  grid-template-columns: center;
 }
 #mini-toasters {
   grid-area: mini-toasters;
@@ -45,4 +80,8 @@
 .toaster-compare {
   height: 100%;
   width: 100%;
+  grid-gap: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  justify-items: start;
 }

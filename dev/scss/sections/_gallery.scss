@@ -16,6 +16,23 @@
     grid-template-columns: auto auto auto;
   }
 }
+#t1text form {
+  @include md {
+    grid-template-columns: auto auto;
+  }
+  @include lg {
+    grid-template-columns: auto auto auto;
+
+    display: flex;
+    input {
+      border: none;
+      border-bottom: 1px solid black;
+      width: 100%;
+      border-radius: 0%;
+      margin-right: 8px;
+    }
+  }
+}
 
 //   @include md {
 //     display: grid;
