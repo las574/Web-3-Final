@@ -93,13 +93,13 @@
     },
     "\/deploy\/img\/Header\/Ellipse 6.jpg" : {
       "ft" : 16384,
-      "iS" : 5834,
+      "iS" : 4742,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/Header\/Ellipse 6.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -306,12 +306,12 @@
     },
     "\/deploy\/img\/Technical\/1.png" : {
       "ft" : 32768,
-      "iS" : 208,
+      "iS" : 171,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/Technical\/1.png",
       "oF" : 0,
-      "oIPL" : 1,
-      "opt" : 1,
+      "oIPL" : 0,
+      "opt" : 0,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
@@ -358,12 +358,12 @@
     },
     "\/deploy\/img\/Technical\/DESIGN ELEGANCE ITALIAN MODERNISM.png" : {
       "ft" : 32768,
-      "iS" : 1790,
+      "iS" : 1049,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/Technical\/DESIGN ELEGANCE ITALIAN MODERNISM.png",
       "oF" : 0,
-      "oIPL" : 1,
-      "opt" : 1,
+      "oIPL" : 0,
+      "opt" : 0,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
@@ -546,6 +546,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/deploy\/thankyou.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 0
+    },
     "\/dev\/content\/gallery.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -586,12 +594,12 @@
       "oAP" : "\/dev\/content\/technical.html",
       "oF" : 0
     },
-    "\/dev\/content\/thankyou.kit" : {
+    "\/dev\/content\/thankyoupage.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/thankyou.html",
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/thankyoupage.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -884,6 +892,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/thankyou.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/thankyou.html",
+      "oF" : 0
     }
   },
   "hooks" : [
