@@ -1,0 +1,78 @@
+/* =============
+    thankyou
+============= */
+
+#thankyou {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "thankyoutext"
+    "toasters"
+    "toaster1text"
+    "toaster2text"
+    "review"
+    "writereview"
+    "submit";
+  grid-gap: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  #thankyou {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "thankyoutext thankyoutext"
+      "toasters toasters"
+      "toaster1text toaster2text"
+      "review review"
+      "writereview submit";
+  }
+}
+
+#thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px;
+}
+
+#toaster1 {
+  text-align: center;
+}
+
+#toaster2 {
+  text-align: center;
+}
+
+#toasters {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 14px;
+}
+
+#toaster1text {
+  grid-area: toaster1text;
+  text-align: center;
+}
+
+#toaster2text {
+  grid-area: toaster2text;
+  text-align: center;
+}
+
+#review {
+  grid-area: review;
+}
+
+.thankyou {
+  height: 100%;
+  width: 100%;
+  grid-gap: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  justify-items: start;
+}

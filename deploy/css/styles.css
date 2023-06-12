@@ -975,61 +975,137 @@ header #form-content > div form button {
 }
 
 /* =============
-    Thank you
+    colonne1
 ============= */
-#thankyou {
+#colonne1 #onestep {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: " checkouttimeline " " bluetoaster" "info1" "rosetoaster" "info2" "promocode" "entercode" "enter" "detail" "placeorder" "continueshopping";
-  grid-gap: 14px;
   padding-left: 14px;
   padding-right: 14px;
-  justify-items: start;
-  align-items: center;
+  grid-template-areas: " bluetoaster " " info1 " " rosetoaster " " info2 " "continueshopping" "  ";
 }
 @media (min-width: 768px) {
-  #thankyou {
-    grid-template-columns: 1fr 1fr 50px 1fr;
-    grid-template-areas: " checkouttimeline ." " bluetoaster info1 promocode ";
+  #colonne1 {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    box-sizing: border-box;
+    grid-template-areas: " bluetoaster toasterinfo1 " "rosetoaster toasterinfo2" "continueshopping";
   }
 }
-#thankyou #checkouttimeline {
-  grid-area: checkoutimeline;
+#colonne1 .checkouttimeline {
+  padding-left: 14px;
+  margin-top: 30px;
+  display: auto;
+  justify-content: auto;
 }
-#thankyou #bluetoaster {
+#colonne1 .bluetoaster {
   grid-area: bluetoaster;
   align-items: center;
+  justify-content: center;
 }
-#thankyou #rosetoaster {
+#colonne1 .rosetoaster {
   grid-area: rosetoaster;
   align-items: center;
 }
-#thankyou #info1 {
+#colonne1 .info1 {
   grid-area: info1;
 }
-#thankyou #info2 {
+#colonne1 .info2 {
   grid-area: info2;
   align-items: center;
 }
-#thankyou #promocode {
+#colonne1 .continueshopping {
+  grid-area: continueshopping;
+  align-items: center;
+}
+#colonne1 .promocode {
   grid-area: promocode;
   align-items: center;
 }
-#thankyou #entercode {
+#colonne1 .entercode {
   grid-area: entercode;
 }
-#thankyou #enter {
+#colonne1 .enter {
   grid-area: enter;
   align-items: center;
 }
-#thankyou #detail {
+#colonne1 .detail {
   grid-area: detail;
   align-items: center;
 }
-#thankyou #placeorder {
+#colonne1 .placeorder {
   grid-area: placeorder;
 }
-#thankyou #continueshopping {
+
+.colonne1 {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+/* =============
+    colonne1
+============= */
+#colonne1 #onestep {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 14px;
+  padding-right: 14px;
+  grid-template-areas: " bluetoaster " " info1 " " rosetoaster " " info2 " "continueshopping" "  ";
+}
+@media (min-width: 768px) {
+  #colonne1 {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    box-sizing: border-box;
+    grid-template-areas: " bluetoaster toasterinfo1 " "rosetoaster toasterinfo2" "continueshopping";
+  }
+}
+#colonne1 .checkouttimeline {
+  padding-left: 14px;
+  margin-top: 30px;
+  display: auto;
+  justify-content: auto;
+}
+#colonne1 .bluetoaster {
+  grid-area: bluetoaster;
+  align-items: center;
+  justify-content: center;
+}
+#colonne1 .rosetoaster {
+  grid-area: rosetoaster;
+  align-items: center;
+}
+#colonne1 .info1 {
+  grid-area: info1;
+}
+#colonne1 .info2 {
+  grid-area: info2;
+  align-items: center;
+}
+#colonne1 .continueshopping {
   grid-area: continueshopping;
   align-items: center;
+}
+#colonne1 .promocode {
+  grid-area: promocode;
+  align-items: center;
+}
+#colonne1 .entercode {
+  grid-area: entercode;
+}
+#colonne1 .enter {
+  grid-area: enter;
+  align-items: center;
+}
+#colonne1 .detail {
+  grid-area: detail;
+  align-items: center;
+}
+#colonne1 .placeorder {
+  grid-area: placeorder;
+}
+
+.colonne1 {
+  padding-left: 14px;
+  padding-right: 14px;
 }

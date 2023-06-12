@@ -1,0 +1,82 @@
+/* =============
+    colonne1
+============= */
+
+#colonne1 {
+  #onestep {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 14px;
+    padding-right: 14px;
+    grid-template-areas:
+      " bluetoaster "
+      " info1 "
+      " rosetoaster "
+      " info2 "
+      "continueshopping"
+      "  ";
+  }
+
+  @include md {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    box-sizing: border-box;
+    grid-template-areas:
+      " bluetoaster toasterinfo1 "
+      "rosetoaster toasterinfo2"
+      "continueshopping";
+  }
+
+  .checkouttimeline {
+    padding-left: 14px;
+    margin-top: 30px;
+    display: auto;
+    justify-content: auto;
+  }
+  .bluetoaster {
+    grid-area: bluetoaster;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rosetoaster {
+    grid-area: rosetoaster;
+    align-items: center;
+  }
+  .info1 {
+    grid-area: info1;
+  }
+  .info2 {
+    grid-area: info2;
+    align-items: center;
+  }
+
+  .continueshopping {
+    grid-area: continueshopping;
+    align-items: center;
+  }
+  .promocode {
+    grid-area: promocode;
+    align-items: center;
+  }
+  .entercode {
+    grid-area: entercode;
+  }
+  .enter {
+    grid-area: enter;
+    align-items: center;
+  }
+
+  .detail {
+    grid-area: detail;
+    align-items: center;
+  }
+
+  .placeorder {
+    grid-area: placeorder;
+  }
+}
+.colonne1 {
+  padding-left: 14px;
+  padding-right: 14px;
+}

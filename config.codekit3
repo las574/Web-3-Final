@@ -39,6 +39,14 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/checkout.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -607,20 +615,20 @@
       "oAP" : "\/deploy\/thankyou.html",
       "oF" : 0
     },
+    "\/dev\/checkout.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 2
+    },
     "\/dev\/content\/checkout\/colonne1.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/checkout\/colonne1.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/checkout\/receipt.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/checkout\/receipt.html",
       "oF" : 0
     },
     "\/dev\/content\/gallery.kit" : {
@@ -647,20 +655,20 @@
       "oAP" : "\/dev\/content\/one_step.html",
       "oF" : 0
     },
-    "\/dev\/content\/share experience.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/share experience.html",
-      "oF" : 0
-    },
     "\/dev\/content\/technical.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/technical.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/thankyou.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/thankyou.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -864,6 +872,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_colonne1.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_colonne1.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/sections\/_gallery.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -894,21 +917,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_share experience.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_share experience.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/dev\/scss\/sections\/_technical.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -924,7 +932,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/checkout\/_checkoutfinal.scss" : {
+    "\/dev\/scss\/sections\/_thankyou.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -933,37 +941,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/checkout\/_checkoutfinal.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/checkout\/_colonne1.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/checkout\/_colonne1.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/checkout\/_receipt.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/checkout\/_receipt.css",
+      "oAP" : "\/dev\/scss\/sections\/_thankyou.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
