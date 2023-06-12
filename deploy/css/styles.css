@@ -973,3 +973,63 @@ header #form-content > div form button {
 #sub-hero > div #sub-right {
   color: white;
 }
+
+/* =============
+    Thank you
+============= */
+#thankyou {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: " checkouttimeline " " bluetoaster" "info1" "rosetoaster" "info2" "promocode" "entercode" "enter" "detail" "placeorder" "continueshopping";
+  grid-gap: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  justify-items: start;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #thankyou {
+    grid-template-columns: 1fr 1fr 50px 1fr;
+    grid-template-areas: " checkouttimeline ." " bluetoaster info1 promocode ";
+  }
+}
+#thankyou #checkouttimeline {
+  grid-area: checkoutimeline;
+}
+#thankyou #bluetoaster {
+  grid-area: bluetoaster;
+  align-items: center;
+}
+#thankyou #rosetoaster {
+  grid-area: rosetoaster;
+  align-items: center;
+}
+#thankyou #info1 {
+  grid-area: info1;
+}
+#thankyou #info2 {
+  grid-area: info2;
+  align-items: center;
+}
+#thankyou #promocode {
+  grid-area: promocode;
+  align-items: center;
+}
+#thankyou #entercode {
+  grid-area: entercode;
+}
+#thankyou #enter {
+  grid-area: enter;
+  align-items: center;
+}
+#thankyou #detail {
+  grid-area: detail;
+  align-items: center;
+}
+#thankyou #placeorder {
+  grid-area: placeorder;
+}
+#thankyou #continueshopping {
+  grid-area: continueshopping;
+  align-items: center;
+}

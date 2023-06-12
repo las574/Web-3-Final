@@ -19,7 +19,9 @@
 @import "layout/_footer";
 
 // Sections Styles
-@import "sections/_technical";
-@import "sections/_gallery";
-@import "sections/_one_step";
-@import "sections/_share experience";
+
+@import "sections/_technical.scss";
+@import "sections/_gallery.scss";
+@import "sections/_one_step.scss";
+@import "sections/_share experience.scss";
+@import "sections/_thankyoupage.scss";
