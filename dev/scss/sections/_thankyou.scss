@@ -6,52 +6,85 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "thankyoutext"
+    "thankyoutitle"
     "toasters"
-    "toaster1text"
-    "toaster2text"
+    "toaster1 toaster2"
+    "toaster1text toaster2text"
     "review"
     "writereview"
     "submit";
   grid-gap: 14px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding: 14px;
   justify-items: center;
+  align-items: center;
+  height: 100vh; /* Set height to 100% viewport height */
+}
+
+@media (min-width: 480px) {
+  #thankyou {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "thankyoutitle thankyoutitle"
+      "toasters toasters"
+      "toaster1 toaster2"
+      "toaster1text toaster2text"
+      "review review"
+      "writereview writereview"
+      "submit submit";
+  }
 }
 
 @media (min-width: 768px) {
   #thankyou {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "thankyoutext thankyoutext"
-      "toasters toasters"
-      "toaster1text toaster2text"
-      "review review"
-      "writereview submit";
+      "thankyoutitle thankyoutitle thankyoutitle"
+      "toaster1 . toaster2"
+      "toaster1text toaster1text toaster2text"
+      "review review review"
+      "writereview writereview writereview"
+      "submit submit submit";
   }
 }
 
-#thankyou {
+@media (min-width: 1024px) {
+  #thankyou {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "thankyoutitle thankyoutitle thankyoutitle thankyoutitle"
+      "toaster1 . . toaster2"
+      "toaster1text toaster1text toaster2text toaster2text"
+      "review review review review"
+      "writereview writereview writereview writereview"
+      "submit submit submit submit";
+  }
+}
+
+#thankyoutitle {
+  grid-area: thankyoutitle;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 14px;
+  height: 100%;
+}
+
+#thankyoutitle h3 {
+  margin: 0;
 }
 
 #toaster1 {
+  grid-area: toaster1;
   text-align: center;
 }
 
 #toaster2 {
+  grid-area: toaster2;
   text-align: center;
 }
 
-#toasters {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 600px;
-  margin-top: 14px;
+#yourorder {
+  grid-area: yourorder;
+  text-align: center;
 }
 
 #toaster1text {
@@ -66,6 +99,23 @@
 
 #review {
   grid-area: review;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#writereview {
+  grid-area: writereview;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#submit {
+  grid-area: submit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .thankyou {

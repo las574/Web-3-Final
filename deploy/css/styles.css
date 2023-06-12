@@ -927,185 +927,168 @@ header #form-content > div form button {
 }
 
 /* =============
-    Sub-Hero
+    colonne1
 ============= */
-@media (min-width: 768px) {
-  #sub-hero {
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". sub-hero-cards .";
-  }
-}
-@media (min-width: 1440px) {
-  #sub-hero {
-    grid-template-columns: auto 1200px auto;
-  }
-}
-#sub-hero > div {
+#colonne1 #onestep {
   display: grid;
-  gap: 16px;
+  grid-template-columns: 1fr;
+  padding-left: 14px;
+  padding-right: 14px;
+  grid-template-areas: " bluetoaster " " info1 " " rosetoaster " " info2 " "continueshopping" "  ";
 }
 @media (min-width: 768px) {
-  #sub-hero > div {
-    grid-area: sub-hero-cards;
-    display: grid;
-    grid-template-columns: 50% auto;
+  #colonne1 {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    box-sizing: border-box;
+    grid-template-areas: " bluetoaster toasterinfo1 " "rosetoaster toasterinfo2" "continueshopping";
   }
 }
-#sub-hero > div > aside {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". sub-hero .";
-  background-color: #fe9fc1;
+#colonne1 .checkouttimeline {
+  padding-left: 14px;
+  margin-top: 30px;
+  display: auto;
+  justify-content: auto;
 }
-#sub-hero > div > aside > div {
-  grid-area: sub-hero;
-  display: grid;
-  grid-template-columns: 70% auto;
+#colonne1 .bluetoaster {
+  grid-area: bluetoaster;
+  align-items: center;
+  justify-content: center;
 }
-#sub-hero > div > aside > div img {
+#colonne1 .rosetoaster {
+  grid-area: rosetoaster;
+  align-items: center;
+}
+#colonne1 .info1 {
+  grid-area: info1;
+}
+#colonne1 .info2 {
+  grid-area: info2;
+  align-items: center;
+}
+#colonne1 .continueshopping {
+  grid-area: continueshopping;
+  align-items: center;
+}
+#colonne1 .promocode {
+  grid-area: promocode;
+  align-items: center;
+}
+#colonne1 .entercode {
+  grid-area: entercode;
+}
+#colonne1 .enter {
+  grid-area: enter;
+  align-items: center;
+}
+#colonne1 .detail {
+  grid-area: detail;
+  align-items: center;
+}
+#colonne1 .placeorder {
+  grid-area: placeorder;
+}
+
+.colonne1 {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+/* =============
+    thankyou
+============= */
+#thankyou {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "thankyoutitle" "toasters" "toaster1 toaster2" "toaster1text toaster2text" "review" "writereview" "submit";
+  grid-gap: 14px;
+  padding: 14px;
+  justify-items: center;
+  align-items: center;
+  height: 100vh; /* Set height to 100% viewport height */
+}
+
+@media (min-width: 480px) {
+  #thankyou {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "thankyoutitle thankyoutitle" "toasters toasters" "toaster1 toaster2" "toaster1text toaster2text" "review review" "writereview writereview" "submit submit";
+  }
+}
+@media (min-width: 768px) {
+  #thankyou {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "thankyoutitle thankyoutitle thankyoutitle" "toaster1 . toaster2" "toaster1text toaster1text toaster2text" "review review review" "writereview writereview writereview" "submit submit submit";
+  }
+}
+@media (min-width: 1024px) {
+  #thankyou {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "thankyoutitle thankyoutitle thankyoutitle thankyoutitle" "toaster1 . . toaster2" "toaster1text toaster1text toaster2text toaster2text" "review review review review" "writereview writereview writereview writereview" "submit submit submit submit";
+  }
+}
+#thankyoutitle {
+  grid-area: thankyoutitle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#thankyoutitle h3 {
+  margin: 0;
+}
+
+#toaster1 {
+  grid-area: toaster1;
+  text-align: center;
+}
+
+#toaster2 {
+  grid-area: toaster2;
+  text-align: center;
+}
+
+#yourorder {
+  grid-area: yourorder;
+  text-align: center;
+}
+
+#toaster1text {
+  grid-area: toaster1text;
+  text-align: center;
+}
+
+#toaster2text {
+  grid-area: toaster2text;
+  text-align: center;
+}
+
+#review {
+  grid-area: review;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#writereview {
+  grid-area: writereview;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#submit {
+  grid-area: submit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thankyou {
+  height: 100%;
   width: 100%;
-}
-#sub-hero > div #sub-left {
-  color: white;
-  background-color: #000;
-}
-#sub-hero > div #sub-right {
-  color: white;
-}
-
-/* =============
-    colonne1
-============= */
-#colonne1 #onestep {
-  display: grid;
-  grid-template-columns: 1fr;
+  grid-gap: 14px;
   padding-left: 14px;
   padding-right: 14px;
-  grid-template-areas: " bluetoaster " " info1 " " rosetoaster " " info2 " "continueshopping" "  ";
-}
-@media (min-width: 768px) {
-  #colonne1 {
-    grid-template-columns: 1fr 1fr;
-    height: auto;
-    box-sizing: border-box;
-    grid-template-areas: " bluetoaster toasterinfo1 " "rosetoaster toasterinfo2" "continueshopping";
-  }
-}
-#colonne1 .checkouttimeline {
-  padding-left: 14px;
-  margin-top: 30px;
-  display: auto;
-  justify-content: auto;
-}
-#colonne1 .bluetoaster {
-  grid-area: bluetoaster;
-  align-items: center;
-  justify-content: center;
-}
-#colonne1 .rosetoaster {
-  grid-area: rosetoaster;
-  align-items: center;
-}
-#colonne1 .info1 {
-  grid-area: info1;
-}
-#colonne1 .info2 {
-  grid-area: info2;
-  align-items: center;
-}
-#colonne1 .continueshopping {
-  grid-area: continueshopping;
-  align-items: center;
-}
-#colonne1 .promocode {
-  grid-area: promocode;
-  align-items: center;
-}
-#colonne1 .entercode {
-  grid-area: entercode;
-}
-#colonne1 .enter {
-  grid-area: enter;
-  align-items: center;
-}
-#colonne1 .detail {
-  grid-area: detail;
-  align-items: center;
-}
-#colonne1 .placeorder {
-  grid-area: placeorder;
-}
-
-.colonne1 {
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
-/* =============
-    colonne1
-============= */
-#colonne1 #onestep {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding-left: 14px;
-  padding-right: 14px;
-  grid-template-areas: " bluetoaster " " info1 " " rosetoaster " " info2 " "continueshopping" "  ";
-}
-@media (min-width: 768px) {
-  #colonne1 {
-    grid-template-columns: 1fr 1fr;
-    height: auto;
-    box-sizing: border-box;
-    grid-template-areas: " bluetoaster toasterinfo1 " "rosetoaster toasterinfo2" "continueshopping";
-  }
-}
-#colonne1 .checkouttimeline {
-  padding-left: 14px;
-  margin-top: 30px;
-  display: auto;
-  justify-content: auto;
-}
-#colonne1 .bluetoaster {
-  grid-area: bluetoaster;
-  align-items: center;
-  justify-content: center;
-}
-#colonne1 .rosetoaster {
-  grid-area: rosetoaster;
-  align-items: center;
-}
-#colonne1 .info1 {
-  grid-area: info1;
-}
-#colonne1 .info2 {
-  grid-area: info2;
-  align-items: center;
-}
-#colonne1 .continueshopping {
-  grid-area: continueshopping;
-  align-items: center;
-}
-#colonne1 .promocode {
-  grid-area: promocode;
-  align-items: center;
-}
-#colonne1 .entercode {
-  grid-area: entercode;
-}
-#colonne1 .enter {
-  grid-area: enter;
-  align-items: center;
-}
-#colonne1 .detail {
-  grid-area: detail;
-  align-items: center;
-}
-#colonne1 .placeorder {
-  grid-area: placeorder;
-}
-
-.colonne1 {
-  padding-left: 14px;
-  padding-right: 14px;
+  justify-items: start;
 }
