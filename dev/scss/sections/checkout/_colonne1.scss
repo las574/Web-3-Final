@@ -13,38 +13,17 @@
   justify-content: space-between;
 
   @include md {
-    padding: 48px 64px 32px 64px;
+    padding: 48px 60px 35px 60px;
     width: 50%;
     height: auto;
-    border: 1px solid var(--Black);
     box-sizing: border-box;
   }
 
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    " checkouttimeline "
-    " bluetoaster"
-    "info1"
-    "rosetoaster"
-    "info2"
-    "continueshopping";
-
-  grid-gap: 14px;
-  padding-left: 14px;
-  padding-right: 14px;
-  justify-items: start;
-  align-items: center;
-
-  @include md {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      " checkouttimeline ."
-      " bluetoaster info1 promocode ";
-  }
-
   .checkouttimeline {
-    grid-area: checkoutimeline;
+    padding: 9px 16px;
+    width: 163px;
+    display: flex;
+    justify-content: center;
   }
   .bluetoaster {
     grid-area: bluetoaster;
